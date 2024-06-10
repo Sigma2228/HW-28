@@ -10,6 +10,7 @@
 }
 .header {
     padding: 32px;
+    position: relative;
 }
 .header-title {
     width: 145px;
@@ -26,7 +27,7 @@
     align-items: center;
 }
 .header-link {
-    padding-left: 50px;
+    margin-left: 50px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -72,13 +73,19 @@
     padding-left: 10px;
 }
 .header-link:hover {
-color: dodgerblue;
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2196F3;
+    cursor: pointer;
 }
 .header-tel:hover {
-    color: dodgerblue;
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196F3;
+    cursor: pointer;
 }
 .header-mail:hover {
-    color: dodgerblue;
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   color: #2196F3;
+   cursor: pointer;
 }
 .section-button {
     background-image:linear-gradient(rgba(0, 0, 0, 0.39), rgba(26, 18, 18, 0.452)),
@@ -301,6 +308,18 @@ color: dodgerblue;
     border-color: #2196F3;
     cursor: pointer;
 }
+
+.clients-icon:hover {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-icon:hover {
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer img {
     padding-top: 60px;
     padding-bottom: 20px;
@@ -371,8 +390,9 @@ address {
     border-radius: 50%;
 }
 .svg:hover {
-    background-color: #2196F3;
-    fill: white;
+   transition: fill, background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   fill: #FFFFFF;
+   background-color: #2196F3;
    cursor: pointer;
 }
 .a {
@@ -382,9 +402,10 @@ address {
     background-color: #ffffff0c;
 }
 .a:hover {
-    fill: white;
-    background-color: #2196F3;
-    cursor: pointer;
+    transition: fill, background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   fill: #FFFFFF;
+   background-color: #2196F3;
+   cursor: pointer;
 }
 .modal {
     display: block;
@@ -591,13 +612,8 @@ form {
     margin-left: 40px;
 }
 .sign-out-input:focus {
+    border: 1px solid #2196F3;
     outline-width: 0;
-}
-.sign-out-input:not(:placeholder-shown):required:valid {
-    border-color: green;
-}
-.sign-out-input:not(:placeholder-shown):required:invalid {
-    border-color: red;
 }
 .publicity-wrap {
     display: flex;
@@ -638,4 +654,21 @@ form {
     border-radius: 4px;
     margin-left: 12px;
     cursor: pointer;
+}
+.line-focus {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+    margin-left: 47px;
+    position: absolute;
+    top: 53px;
+}
+.line-focus:hover {
+    transition: transform 2s ease;
+    transform: translateX(53px);
+}
+.header-wrap {
+    display: flex;
+    position: relative;
 }
