@@ -122,9 +122,10 @@
         overflow: hidden;
     } 
     figure:hover .thumb {
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateY(0px);
         background-color: #2196F3;
+        box-shadow: 0 4px 2px 0 #0000001F;
     }
     .text-transform {
         color: #FFFFFF;
@@ -201,8 +202,9 @@
         overflow: hidden;
     }
     figure:hover {
-        box-shadow: 1px 4px 6px 0 #00000029;
         cursor: pointer;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 2px 0 #0000001F;
     }
     .main-title {
         font-size: 18px;
