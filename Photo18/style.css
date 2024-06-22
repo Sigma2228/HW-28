@@ -32,6 +32,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .iconn {
     fill: #2196F3;
@@ -41,8 +42,9 @@
     font-size: 14px;
     font-weight: 500;
     color: #757575;
-    padding-right: 50px;
-    padding-left: 10px;
+    margin-right: 50px;
+    margin-left: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .icon-smartphone {
     fill: #757575;
@@ -52,38 +54,43 @@
 }
 
 .icon-envelope-hover {
-    padding-left: 340px;
     width: 16px;
     height: 12px;
     color: #757575;
+    margin-left: 340px;
 }
 
 .icon-envelope-hover:hover {
-     color: dodgerblue;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2196F3;
+    cursor: pointer;
 }
 
 .icon-smartphone:hover {
-    color: dodgerblue;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2196F3;
+    cursor: pointer;
 }
 .header-tel {
     text-decoration: none;
     font-size: 14px;
     color: #757575;
     font-weight: 500;
-    padding-left: 10px;
+    margin-left: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .header-link:hover {
-    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2196F3;
     cursor: pointer;
 }
 .header-tel:hover {
-    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2196F3;
     cursor: pointer;
 }
 .header-mail:hover {
-    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    color: #2196F3;
    cursor: pointer;
 }
@@ -302,22 +309,14 @@
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
     border-radius: 5px;
-}
-.clients-icon:hover {
-    fill: #2196F3;
-    border-color: #2196F3;
-    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-icon:hover {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-icon:hover {
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2196F3;
+    border-color: #2196F3;
+    cursor: pointer;
 }
 
 .footer img {
@@ -387,10 +386,12 @@ address {
 .svg {
     fill: #AFB1B8;
     padding: 10px;
+    height: 20px;
     border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg:hover {
-   transition: fill, background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
    fill: #FFFFFF;
    background-color: #2196F3;
    cursor: pointer;
@@ -399,10 +400,12 @@ address {
     fill: #AFB1B8;
     padding: 10px;
     border-radius: 50%;
+    height: 20px;
     background-color: #ffffff0c;
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1)
 }
 .a:hover {
-    transition: fill, background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
    fill: #FFFFFF;
    background-color: #2196F3;
    cursor: pointer;
@@ -455,8 +458,6 @@ address {
     margin-bottom: 10px;
 }
 .sign-out-input {
-    border: 1px solid #21212133;
-    border-radius: 4px;
     height: 50px;
 }
 .textarea {
@@ -537,12 +538,12 @@ text-align: left;
   background-color: #FFFFFF;
   cursor: pointer;
   position: absolute;
+  height: 45px;
   right: 8px;
   top: 8px;
   border: 1px solid #0000001A;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 6px;
-
 }
 
 .input-wrap {
@@ -614,6 +615,7 @@ form {
 .sign-out-input:focus {
     border: 1px solid #2196F3;
     outline-width: 0;
+    fill: #2196F3;
 }
 .publicity-wrap {
     display: flex;
